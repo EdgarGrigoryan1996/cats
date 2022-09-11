@@ -1,0 +1,50 @@
+.navbar{
+	background-color: rgb(85, 85, 85);
+	display:flex;
+	align-items: center;
+	
+}
+.menu-item{
+	padding: 25px;
+	height: 100%;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.menu-item {
+	color:#fff;
+}
+.category-menu .menu-item {
+	color:rgb(199, 199, 199)
+}
+.menu-item:hover{
+	background-color: rgb(221, 221, 221);
+
+}
+.menu-item:hover{
+		color:rgb(63, 62, 62);
+}
+.category{
+	position: relative;
+}
+.category-menu{
+	position: absolute;
+	top:0;
+	left:0;
+	transition: all 2s ease;
+	display: none;
+}
+.category:hover > .category-menu{
+	display: flex;
+	transition: all 2s ease;
+	left:100px
+}
+
+@media screen and (max-width:856px) {
+	.category-menu{
+		flex-direction: column;
+		background-color: rgb(102, 102, 102);
+	}
+	.category-menu .menu-item{
+		padding: 20 50px;
+	}
+}

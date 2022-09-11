@@ -1,0 +1,23 @@
+
+.cats-block{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.cat-block{
+	padding: 25px;
+	margin: 15px;
+	border:1px solid #ccc;
+	border-radius: 15px;
+	box-shadow: 2px 5px 15px rgb(85, 85, 85);
+}
+.cats-block img.cat-img {
+	width: 300px;
+	height: 300px;
+	border-radius: 8px;
+}
+
+.cat-block:hover{
+	cursor: pointer;
+}
